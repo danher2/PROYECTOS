@@ -6,9 +6,9 @@
 </head>
 <body>
 	<h1 th:text="${titulo}"></h1>
-
+<!-- condicion si la lista esta vacia  que muestre -->
 	<div th:if="${usuarios.isEmpty()}">no hay usuarios en la lista!</div>
-
+<!-- si la lista no esta vacia que se muestre -->
 	<table th:if="${not usuarios.isEmpty()}">
 		<thead>
 			<tr>
